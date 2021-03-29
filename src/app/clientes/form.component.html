@@ -1,0 +1,182 @@
+<div class="card bg-dark text-white">
+    <div class="card-header">{{ titulo }}</div>
+    <div class="card-body">
+
+        <form>
+            <div class="form-group row">
+                <label for="serial" class="col-form-label col-sm-3">Serial</label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" [(ngModel)]="cliente.serial" name="serial" [disabled]="cliente.editar">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="form-group row">
+                <label for="cliente" class="col-form-label col-sm-3">Cliente</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.cliente" name="cliente">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="nombres" class="col-form-label col-sm-3">Nombres</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.nombres" name="nombres">
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <label for="apellidos" class="col-form-label col-sm-3">Apellidos</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.apellidos" name="apellidos">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="direccion" class="col-form-label col-sm-3">Direccion</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.direccion" name="direccion">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="correo" class="col-form-label col-sm-3">Correo</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.correo" name="correo">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="telefono" class="col-form-label col-sm-3">Telefono</label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" [(ngModel)]="cliente.telefono" name="telefono">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="telefonoAlter" class="col-form-label col-sm-3">Telefono Alterno</label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" [(ngModel)]="cliente.telefonoAlter" name="telefonoAlter">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="celular" class="col-form-label col-sm-3">Celular</label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" [(ngModel)]="cliente.celular" name="celular">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="cargo" class="col-form-label col-sm-3">Cargo</label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" [(ngModel)]="cliente.cargo" name="cargo">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="dsCargo" class="col-form-label col-sm-3">Descripción cargo</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.dsCargo" name="dsCargo">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="ciudad" class="col-form-label col-sm-3">Ciudad</label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" [(ngModel)]="cliente.ciudad" name="ciudad">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="dsCiudad" class="col-form-label col-sm-3">Descripción Ciudad</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.dsCiudad" name="dsCiudad">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="comunidad" class="col-form-label col-sm-3">Comunidad</label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" [(ngModel)]="cliente.comunidad" name="comunidad">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="dsComunidad" class="col-form-label col-sm-3">Descripción Comunidad</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.dsComunidad" name="dsComunidad">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="empresaLaboral" class="col-form-label col-sm-3">Empresa Laboral</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.empresaLaboral" name="empresaLaboral">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="division" class="col-form-label col-sm-3">División</label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" [(ngModel)]="cliente.division" name="division">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <label for="dsDivision" class="col-form-label col-sm-3">Descripción División</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.dsDivision" name="dsDivision">
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <label for="pais" class="col-form-label col-sm-3">País</label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" [(ngModel)]="cliente.pais" name="pais">
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <label for="dsPais" class="col-form-label col-sm-3">Descripción País</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.dsPais" name="dsPais">
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <label for="hobbies" class="col-form-label col-sm-3">Hobbies</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" [(ngModel)]="cliente.hobbies" name="hobbies">
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <button class="btn btn-primary" role="button" (click)='create()' *ngIf="!cliente.editar else elseBlock">Crear</button>
+
+                    <ng-template #elseBlock>
+                      <button class="btn btn-primary" role="button" (click)='update()'>Editar</button>
+                    </ng-template>
+                  </div>
+            </div>
+        </form>
+    </div>
+</div >

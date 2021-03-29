@@ -1,0 +1,53 @@
+<div class="card border-primary mb-3">
+    <div class="card-header">Clientes</div>
+    <div class="card-body text-primary">
+      <h5 class="card-title">Listado de clientes</h5>
+  
+
+      <div class="my-2 text-left">
+        <button class="btn btn-rounded btn-primary" type="button" [routerLink]="['/clientes/form']">
+          Crear Cliente
+        </button>
+      </div>
+
+      <div *ngIf="clientes?.length == 0" class = "alert alert-info">
+        No hay registros en la base de datos!
+      </div>
+      <div class="table-responsive">
+      <table class="table table-bordered table-striped" *ngIf="clientes.length>0">
+        <thead>
+          <tr>
+
+            <th>Serial</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Dirección</th>
+            <th>Correo</th>
+            <th>Celular</th>
+            <th>Cargo</th>
+            <th>Ciudad</th>
+            <th>Pais</th>
+            <th>Editar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cliente of clientes">
+            <td>{{ cliente.serial }}</td>
+            <td>{{ cliente.nombres }}</td>
+            <td>{{ cliente.apellidos }}</td>
+            <td>{{ cliente.direccion }}</td>
+            <td>{{ cliente.correo }}</td>
+            <td>{{ cliente.celular }}</td>
+            <td>{{ cliente.dsCargo }}</td>
+            <td>{{ cliente.dsCiudad }}</td>
+            <td>{{ cliente.dsPais }}</td>
+            <td>
+              <button type="button" name="editar" [routerLink]="['/clientes/form', cliente.serial]" class="btn btn-primary btn-sm">Editar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    </div>
+  </div>
